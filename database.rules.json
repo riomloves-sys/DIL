@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "status": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "activeSessions": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "typing": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "games": {
+       ".read": "auth != null",
+       ".write": "auth != null"
+    }
+  }
+}

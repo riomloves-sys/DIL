@@ -1,0 +1,8 @@
+{
+  "name": "omp chat real",
+  "description": "A modern, full-stack real-time chat application with voice, video, media sharing, and admin controls.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
